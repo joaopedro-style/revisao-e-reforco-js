@@ -4,14 +4,14 @@
 exemplo1(); // chamada da função
 
 /* Sintaxe tradicional, função nomeada a ordem de declaração da função neste caso NÂO IMPORTA */
-function exemplo1(){
+function exemplo1() {
     console.log("Função nomeada");
 };
 
 exemplo1(); // chamada da função
 
 
-function separador(){
+function separador() {
     console.log("\n**********************************\n");
 };
 
@@ -20,7 +20,7 @@ separador();
 // chamada aqui dá erro, pois não pode ser feita antes da declaração exemplo2();
 
 /* Sintaxe tradicional, função anônima Nesta sintaxe, a ordem, IMPORTA. */
-const exemplo2 = function(){
+const exemplo2 = function () {
     console.log("Função anônima");
 };
 
@@ -29,6 +29,7 @@ exemplo2(); // chamada (sempre após declarar a função anônima)
 
 separador();
 
+// Mini-Exercícios
 
 /* 1) Crie uma função (qualquer sintaxe) que receba dois valores númericos como parâmetros, calcule a diferença entre estes valores e retorne o resultado calculado. */
 
@@ -36,3 +37,11 @@ separador();
 
 /* 3) Apresente os resultados no console. */
 
+function valores(valor1, valor2) {
+    let diferenca = valor1 - valor2
+    return diferenca;
+};
+
+let resultado1 = valores(50,250);
+
+console.log(resultado1);
