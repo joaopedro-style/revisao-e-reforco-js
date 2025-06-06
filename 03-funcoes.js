@@ -43,5 +43,7 @@ function valores(valor1, valor2) {
 };
 
 let resultado1 = valores(50,250);
+let resultado2 = valores(1500, -150);
 
 console.log(resultado1);
+console.log(resultado2);
