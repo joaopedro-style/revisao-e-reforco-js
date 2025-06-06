@@ -47,3 +47,23 @@ let resultado2 = valores(1500, -150);
 
 console.log(resultado1);
 console.log(resultado2);
+
+
+separador();
+
+
+/* Sintaxe moderna, função flecha/seta (arrow function) nesta sintaxe, a ordem de declaração IMPORTA. */
+const exemplo3 = () => {
+    console.log("Arrow funtion");
+};
+
+exemplo3(); // Chamada deve ser feita após a declaração
+
+const saudacao = (nome) => {
+    console.log("Olá "+nome);
+};
+
+saudacao("João Pedro");
+saudacao("Alana");
+saudacao("Gabriel");
+
