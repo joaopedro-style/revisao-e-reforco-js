@@ -95,3 +95,5 @@ let resultadoDoCalculo2 = calculo(400,700);
 
 console.log(resultadoDoCalculo1);
 console.log(resultadoDoCalculo2);
+
+
