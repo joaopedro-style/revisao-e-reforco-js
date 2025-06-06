@@ -38,7 +38,7 @@ separador();
 /* 3) Apresente os resultados no console. */
 
 function valores(valor1, valor2) {
-    let diferenca = valor1 - valor2
+    let diferenca = valor1 - valor2;
     return diferenca;
 };
 
@@ -78,3 +78,20 @@ console.log(calcularMetadeSintaxeCompleta(10));
 const clacularMetade = valor => valor / 2;
 console.log(clacularMetade(10));
 
+
+separador();
+
+// Exercício de refatoração
+/* 1) Reescreva a função do exercício anterior usando a sintaxe de arrow funtion */
+/* 2) Teste fazendo novas chamadas e novas saídas */
+
+const calculo = (calculo1, calculo2) => {
+    let resultado = calculo1 - calculo2;
+    return resultado;
+};
+
+let resultadoDoCalculo1 = calculo(60,500);
+let resultadoDoCalculo2 = calculo(400,700);
+
+console.log(resultadoDoCalculo1);
+console.log(resultadoDoCalculo2);
