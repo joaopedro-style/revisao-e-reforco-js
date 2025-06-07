@@ -37,16 +37,23 @@ separador();
 
 /* 3) Apresente os resultados no console. */
 
+// versão 2 
+
+// function calcularDiferenca( valor1, valor2 ){
+//     return valor1 - valor2;
+// }
+
 function valores(valor1, valor2) {
     let diferenca = valor1 - valor2;
     return diferenca;
 };
 
-let resultado1 = valores(50,250);
+let resultado1 = valores(50, 250);
 let resultado2 = valores(1500, -150);
 
 console.log(resultado1);
 console.log(resultado2);
+// console.log( calcularDiferenca(100, 50) );
 
 
 separador();
@@ -60,7 +67,7 @@ const exemplo3 = () => {
 exemplo3(); // Chamada deve ser feita após a declaração
 
 /* Quando a função tem SOMENTE um parâmetro, podemos remover os parênteses. E quando ela faz SOMENTE UMA ÚNICA ação (ideal), podemos remover as chaves e deixar em uma linha. */
-const saudacao = nome => console.log("Olá "+nome);
+const saudacao = nome => console.log("Olá " + nome);
 
 saudacao("João Pedro");
 saudacao("Alana");
@@ -82,16 +89,24 @@ console.log(clacularMetade(10));
 separador();
 
 // Exercício de refatoração
+
 /* 1) Reescreva a função do exercício anterior usando a sintaxe de arrow funtion */
 /* 2) Teste fazendo novas chamadas e novas saídas */
+
+// versão 2
+
+// const calcularDiferenca_2 = (valor1, valor2) => valor1 - valor2;
+
+// let result = calcularDiferenca_2(7, 5);
+// console.log(result);
 
 const calculo = (calculo1, calculo2) => {
     let resultado = calculo1 - calculo2;
     return resultado;
 };
 
-let resultadoDoCalculo1 = calculo(60,500);
-let resultadoDoCalculo2 = calculo(400,700);
+let resultadoDoCalculo1 = calculo(60, 500);
+let resultadoDoCalculo2 = calculo(400, 700);
 
 console.log(resultadoDoCalculo1);
 console.log(resultadoDoCalculo2);
