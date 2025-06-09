@@ -42,12 +42,13 @@ separador();
 3) Export-as como módulos
 4) No arquivo 05, importe e utilize estas funções passando textos e valores para testes. */
 
-import { marcas, carros, preco } from "./modulos-esm/funcoes.js";
+import { marcas, carros, preco, formatarMoeda } from "./modulos-esm/funcoes.js";
 
 console.log(marcas("nike"));
 console.log(carros("Ferrari"));
 console.log(preco(1700));
 
-// versão 2
+// versão 2 do formato valor em moeda
+
 console.log(formatarMoeda(3000, 'USD', 'en'));
 console.log(formatarMoeda(5000, 'EUR', 'fr'));
