@@ -42,3 +42,8 @@ separador();
 3) Export-as como módulos
 4) No arquivo 05, importe e utilize estas funções passando textos e valores para testes. */
 
+import { marcas, carros, preco } from "./modulos-esm/funcoes.js";
+
+console.log(marcas("nike", "adidas", "pulma"));
+console.log(carros("Ferrari", "BMW", "Gol"));
+console.log(preco(1700));
