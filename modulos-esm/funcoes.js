@@ -1,10 +1,10 @@
 'use strict';
 
-export const marca = tipoDemarca => tipoDemarca.toUpperCase();
+export const marca = nomeDamarca => nomeDamarca.toUpperCase();
 
-export const carro = tipoDeCarro => tipoDeCarro.toLowerCase();
+export const carro = nomeDoCarro => nomeDoCarro.toLowerCase();
 
-export const preco = valor => {
+export const formatarPreco = valor => {
     return valor.toLocaleString(
         "pt-BR", {
             style: "currency",
