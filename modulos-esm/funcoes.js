@@ -12,3 +12,15 @@ export const preco = valor => {
         }
     )
 };
+
+// versão 2
+
+export const formatarMoeda = (valor, moeda = 'BRL', localidade = 'pt-BR') => {
+    return valor.toLocaleString(
+        localidade,
+        {
+            style: "currency",
+            currency: moeda
+        }
+    )
+};

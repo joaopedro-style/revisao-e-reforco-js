@@ -44,6 +44,10 @@ separador();
 
 import { marcas, carros, preco } from "./modulos-esm/funcoes.js";
 
-console.log(marcas("nike", "adidas", "pulma"));
-console.log(carros("Ferrari", "BMW", "Gol"));
+console.log(marcas("nike"));
+console.log(carros("Ferrari"));
 console.log(preco(1700));
+
+// versão 2
+console.log(formatarMoeda(3000, 'USD', 'en'));
+console.log(formatarMoeda(5000, 'EUR', 'fr'));
