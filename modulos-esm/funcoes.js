@@ -1,8 +1,8 @@
 'use strict';
 
-export const marcas = marca => marca.toUpperCase();
+export const marca = tipoDemarca => tipoDemarca.toUpperCase();
 
-export const carros = tipo => tipo.toLowerCase();
+export const carro = tipoDeCarro => tipoDeCarro.toLowerCase();
 
 export const preco = valor => {
     return valor.toLocaleString(
