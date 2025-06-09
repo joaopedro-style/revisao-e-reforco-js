@@ -39,9 +39,9 @@ separador();
 
 // versão 2 
 
-// function calcularDiferenca( valor1, valor2 ){
-//     return valor1 - valor2;
-// }
+function calcularDiferenca( valor1, valor2 ){
+    return valor1 - valor2;
+}
 
 function valores(valor1, valor2) {
     let diferenca = valor1 - valor2;
@@ -53,7 +53,7 @@ let resultado2 = valores(1500, -150);
 
 console.log(resultado1);
 console.log(resultado2);
-// console.log( calcularDiferenca(100, 50) );
+console.log( calcularDiferenca(100, 50) );
 
 
 separador();
@@ -95,10 +95,10 @@ separador();
 
 // versão 2
 
-// const calcularDiferenca_2 = (valor1, valor2) => valor1 - valor2;
+const calcularDiferenca_2 = (valor1, valor2) => valor1 - valor2;
 
-// let result = calcularDiferenca_2(7, 5);
-// console.log(result);
+let result = calcularDiferenca_2(7, 5);
+console.log(result);
 
 const calculo = (calculo1, calculo2) => {
     let resultado = calculo1 - calculo2;
