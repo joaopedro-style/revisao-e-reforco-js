@@ -1,8 +1,8 @@
 'use strict';
 
-export const marca = nomeDamarca => nomeDamarca.toUpperCase();
+export const converterMaiuscula = texto => texto.toUpperCase();
 
-export const carro = nomeDoCarro => nomeDoCarro.toLowerCase();
+export const converterMinuscula = texto => texto.toLowerCase();
 
 export const formatarPreco = valor => {
     return valor.toLocaleString(

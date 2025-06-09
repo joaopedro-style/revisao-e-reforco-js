@@ -42,10 +42,10 @@ separador();
 3) Export-as como módulos
 4) No arquivo 05, importe e utilize estas funções passando textos e valores para testes. */
 
-import { marca, carro, formatarPreco, formatarMoeda } from "./modulos-esm/funcoes.js";
+import { converterMaiuscula, converterMinuscula, formatarPreco, formatarMoeda } from "./modulos-esm/funcoes.js";
 
-console.log(marca("nike"));
-console.log(carro("Ferrari 488 GTB"));
+console.log(converterMaiuscula("nike"));
+console.log(converterMinuscula("Ferrari 488 GTB"));
 console.log(formatarPreco(1700));
 
 // versão 2 do formato valor em moeda
