@@ -30,3 +30,15 @@ separador();
 console.log(pessoa.nome);
 console.log(livro);
 console.log(personagens); // lembre-se: personagens é um apelido para alunos
+
+separador();
+
+/* Exercícios
+1) crie um arquivo chamado "funcoes.js" dentro da pasta "modulos-esm"
+2) Dentro dele, programe 3 funções (USANDO ARROW FUNCTION):
+    - Converter caracteres para MAIÚSCULO
+    - Converter caracteres para MINÚSCULO
+    - Formatar valor em moeda brasileira (real)
+3) Export-as como módulos
+4) No arquivo 05, importe e utilize estas funções passando textos e valores para testes. */
+
