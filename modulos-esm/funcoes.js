@@ -24,3 +24,8 @@ export const formatarMoeda = (valor, moeda = 'BRL', localidade = 'pt-BR') => {
         }
     )
 };
+
+/* Usamos o rest operator para obter uma lista de parâmetros, não importando a quantidade */
+export function classificar(...texto){
+    return texto.sort();
+}
