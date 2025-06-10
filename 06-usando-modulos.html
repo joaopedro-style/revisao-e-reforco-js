@@ -9,6 +9,22 @@
     <h1>Acessando módulos</h1>
     <hr>
     <ul id="lista-alunos"></ul>
-    
+
+    <script type="module">
+        import { alunos } from "./modulos-esm/dados.js";
+
+        console.log(alunos);
+
+        const lista = document.querySelector("#lista-alunos");
+
+        for(const aluno of alunos){
+            let item = document.createElement("li");
+
+            item.innerHTML = aluno;
+
+            lista.appendChild(item);
+        }
+    </script>
+
 </body>
 </html>
