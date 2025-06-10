@@ -5,8 +5,7 @@
 - `var`: escopo GLOBAL
 - `let`: escopo BLOCO, podendo ser GLOBAL dependendo de onde declarada
 - `const`: escopo BLOCO, podendo ser GLOBAL dependendo de onde declarada . obs.:
-**obrigatório** inicializar com algum valor.
-
+  **obrigatório** inicializar com algum valor.
 
 ---
 
@@ -21,6 +20,10 @@ Existem duas formas de uso:
 
 ```json
 {
-    "type": "module"
+  "type": "module"
 }
 ```
+
+---
+
+## Sobre os operadores REST e SPREAD (...)
