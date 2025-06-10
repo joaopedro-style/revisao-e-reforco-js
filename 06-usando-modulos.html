@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usando módulos JS em páginas HTML</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Acessando módulos</h1>
-    <hr>
+    <hr />
     <ul id="lista-alunos"></ul>
 
     <script type="module">
-        'use strict';
-        import { alunos } from "./modulos-esm/dados.js";
+      "use strict";
+      import { alunos } from "./modulos-esm/dados.js";
 
-        console.log(alunos);
+      console.log(alunos);
 
-        const lista = document.querySelector("#lista-alunos");
+      const lista = document.querySelector("#lista-alunos");
 
-        for(const aluno of alunos){
-            let item = document.createElement("li");
+      for (const aluno of alunos) {
+        let item = document.createElement("li");
 
-            item.innerHTML = aluno;
+        item.innerHTML = aluno;
 
-            lista.appendChild(item);
-        }
+        lista.appendChild(item);
+      }
     </script>
-
-</body>
+  </body>
 </html>

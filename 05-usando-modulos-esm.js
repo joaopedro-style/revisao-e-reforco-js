@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 // 05-usando-modulos-esm.js
 
 // Importação de recurso padrão (default)
-import alunos from './modulos-esm/alunos.js';
+import alunos from "./modulos-esm/alunos.js";
 
 // Importação de mútiplos recursos/módulos usando ESM
-import { saudacao, clientes, separador } from './modulos-esm/exemplos.js';
+import { saudacao, clientes, separador } from "./modulos-esm/exemplos.js";
 
 // Uso de um 'alias/apelido' para evitar conflito de nomes
-import { pessoa, livro, alunos as personagens } from './modulos-esm/dados.js';
+import { pessoa, livro, alunos as personagens } from "./modulos-esm/dados.js";
 
 saudacao("Fulano de Tal");
 console.log(clientes);
@@ -19,10 +19,9 @@ separador();
 console.log(alunos[1]);
 console.log(alunos);
 
-for(const aluno of alunos){
-    console.log(aluno);
+for (const aluno of alunos) {
+  console.log(aluno);
 }
-
 
 separador();
 
@@ -52,5 +51,5 @@ console.log(recursos.formatarPreco(1700));
 
 // versão 2 do formato valor em moeda
 
-console.log(recursos.formatarMoeda(3000, 'USD', 'en'));
-console.log(recursos.formatarMoeda(5000, 'EUR', 'fr'));
+console.log(recursos.formatarMoeda(3000, "USD", "en"));
+console.log(recursos.formatarMoeda(5000, "EUR", "fr"));
