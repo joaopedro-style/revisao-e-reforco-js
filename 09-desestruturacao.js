@@ -72,3 +72,20 @@ console.log(monitor);
 console.log(mouse);
 console.log(numero);
 console.log(converterMaiuscula("João"));
+
+separador();
+
+const guloseimas = [
+  "brigadeiro",
+  "brownie",
+  "torta de limão",
+  "coxinha",
+  "pastel",
+  "pizza",
+  "esfiha",
+];
+
+// Desetruturação com operador rest
+const [brigadeiro, brownie, torta, ...salgados] = guloseimas;
+console.log(brigadeiro);
+console.log(salgados); // virou um array
