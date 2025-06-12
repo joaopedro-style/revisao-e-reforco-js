@@ -58,3 +58,13 @@ const cursosComDesconto = cursos.map((cursos) => {
 });
 
 console.log(cursosComDesconto);
+
+separador();
+
+/* EXERCÌCIO
+Gere uma nova lista de cursos contendo apenas os titulos e as categorias. */
+const titulosECategorias = cursos.map((cursos) => {
+  return { titulo: cursos.titulo, categoria: cursos.categoria };
+});
+
+console.log(titulosECategorias);
