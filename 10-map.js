@@ -46,3 +46,15 @@ Use o map para gerar um novo array contendo SOMENTE os preços dos cursos calcul
 
 const precos = cursos.map((curso) => curso.preco - curso.preco * 0.1);
 console.log(precos);
+
+separador();
+
+// Exemplo 3: gerar um novo array COMPLETO (ou seja, com os objetos completos) mas com os preços atualizados com o desconto
+const cursosComDesconto = cursos.map((cursos) => {
+  return {
+    ...cursos, // spread das propriedades do curso (copiando-as pra cá)
+    preco: cursos.preco - cursos.preco * 0.1, // mas o preco é atualizado
+  };
+});
+
+console.log(cursosComDesconto);
