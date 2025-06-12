@@ -165,3 +165,14 @@ console.log(numeroDoEndereco);
 console.log(bairro);
 console.log(mensalidade);
 console.log(atendimento());
+
+separador();
+
+// Desestruturação de parâmetros de função
+function processarPedido(dadosPedido) {
+  console.log("Produto: " + dadosPedido[0]);
+  console.log("Preço: " + dadosPedido[1]);
+}
+
+const pedido = ["TV", 1500];
+processarPedido(pedido);
