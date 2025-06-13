@@ -63,8 +63,16 @@ separador();
 
 /* EXERCÌCIO
 Gere uma nova lista de cursos contendo apenas os titulos e as categorias. */
-const titulosECategorias = cursos.map((cursos) => {
-  return { titulo: cursos.titulo, categoria: cursos.categoria };
-});
+
+//versão 1
+// const titulosECategorias = cursos.map((cursos) => {
+//   return { titulo: cursos.titulo, categoria: cursos.categoria };
+// });
+
+// versão 2: com retorno implícito (atenção: use parênteses no retorno do objeto)
+const titulosECategorias = cursos.map((cursos) => ({
+  titulo: cursos.titulo,
+  categoria: cursos.categoria,
+}));
 
 console.log(titulosECategorias);
