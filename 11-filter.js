@@ -69,6 +69,7 @@ const cursosFrontEndMobilePreco = cursos.filter(
     curso.preco > 600
 );
 
+console.log("Quantidade de cursos: " + cursosFrontEndMobilePreco.length);
 console.log(cursosFrontEndMobilePreco);
 
 separador();
